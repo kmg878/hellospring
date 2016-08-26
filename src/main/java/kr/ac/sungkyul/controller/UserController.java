@@ -23,6 +23,7 @@ public class UserController {
 	@ResponseBody
 	@RequestMapping(value= "/join",method= RequestMethod.POST)
 	public String join(@ModelAttribute UserVo userVo){
+		System.out.println(userVo);
 		return "UserController:join()";
 	}
 	
